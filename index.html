@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		<meta charset="utf-8">
+		<title>应急产品组</title>
+		<link rel="stylesheet" href="css/style.css" media="screen" />
+		<!-- MAIN STYLE CSS FILE -->
+		<link rel="stylesheet" href="css/responsive.css" media="screen" />
+		<!-- RESPONSIVE CSS FILE -->
+		<link rel="stylesheet" href="css/colors/blue-color.css" media="screen" />
+		<!-- DEFAULT BLUE COLOR CSS FILE -->
+		<link rel="stylesheet" href="css/layer-slider.css" media="screen" />
+		<!-- LAYER SLIDER CSS FILE -->
+		<link href="css/newStyle.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css" media="screen" />
+		<!-- FONT AWESOME ICONS CSS FILE -->
+		<style>
+			.portfolio-item {
+				height: 200px;
+				background: #16e61c42 !important;
+			}
+
+			.back {
+				display: none;
+				position: fixed;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				z-index: 1000;
+				filter: alpha(opacity=70);
+				text-align: center;
+			}
+
+			.center {
+				width: 80%;
+				margin: 5% auto;
+				z-index: 1001;
+				height: 80%;
+				width: 80%;
+				margin: 5% auto;
+			}
+
+			;
+		</style>
+		<script src="js/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var picData = [
+				'images/products/B86_Back.png', 'images/products/B81.png',
+				'images/products/D08.png', 'images/products/DS-B85_Back.png',
+				'images/products/B80-Back.png', 'images/products/DCS-BOX.png'
+			]
+
+			function prewImg(imgEle) {
+				$(".back").css("display", "block");
+				$("#prewImg").attr("src", picData[$(imgEle).attr("id")]);
+			}
+
+			function canclePrew() {
+				$(".back").css("display", "none");
+				$("#prewImg").attr("src", "")
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div id="main-navigation">
+			<!--main navigation wrapper starts -->
+			<div class="container">
+				<ul class="main-menu">
+					<li><a href="index.html">首页</a>
+					</li>
+					<li><a href="iframe.html">功能区域</a>
+					</li>
+					<li><a href="index.html">团队介绍</a>
+					</li>
+					<li><a href="index.html">用户中心</a>
+					</li>
+				</ul>
+				<!-- main navigation ends-->
+				<div class="after-nav-info">
+					<h4></h4>
+				</div>
+			</div>
+		</div>
+		<div class="clear:both"></div>
+
+		<header style="margin-top: 49px; padding: 0;">
+			<!--header starts -->
+
+			<div class="container">
+				<!--your logo-->
+				<div class="head-wrapp">
+					<a href="index.html" id="logo"
+						style="float:left;font-weight:900; font-size:32px; font-family:微软雅黑;float:left; text-shadow:2px 2px 2px #ccc;">
+						<img src="css/pic/logo.png" style="width:200px; height:32px; " alt="" />
+						应急产品组调试界面</a>
+				</div>
+			</div>
+			<!--main navigation wrapper ends -->
+		</header>
+		<div class="clear:both"></div>
+		<div class="intro-features" style="margin:0px;">
+			<!-- intro features panel starts -->
+			<div class="container">
+				<h4>最新产品</h4>
+				<div class="slidewrap" style="overflow: hidden; width: 100%;">
+					<!-- carousel item starts -->
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="0" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/B86.png" style="margin-left: 10%;width: 80%;" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DS-B86 V1.0</a>
+								<p> 物联中控主机 </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="1" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/B81.png" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DS-B81 V1.1.2</a>
+								<p> 小型智能物联网主机 </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="2" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/D08.png" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DS-B81-D08 V1.1.2</a>
+								<p> 小型智能物联网主机采集模块 </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="3" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/DS-B85.png" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DS-B85 V1.1.2</a>
+								<p> 轻型智能物联网主机 </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="4" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/B80.png" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DS-B80 V1.2</a>
+								<p> 智能物联网主机 </p>
+							</div>
+						</div>
+					</div>
+
+					<!-- carousel item starts -->
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="5" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/products/DCS-BOX.png" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">DCS-BOX</a>
+								<p> 生产数据盒子 </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="6" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/portfolio/portfolio-item-9.jpg" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">Font
+									Design</a>
+								<p> Design / Development </p>
+							</div>
+						</div>
+					</div>
+					<div class="one-fourth">
+						<div class="item-wrapp">
+							<div class="portfolio-item"> <a href="single-project-small.html" class="item-permalink"><i
+										class="icon-link"></i></a>
+								<div onclick="prewImg(this)" id="7" class="item-preview"><i class="icon-zoom-in"></i>
+								</div> <img src="images/portfolio/portfolio-item-10.jpg" alt="" />
+							</div>
+							<div class="portfolio-item-title"> <a href="single-project-small.html">Custom
+									Drupal Theme</a>
+								<p> Design / Development </p>
+							</div>
+						</div>
+					</div>
+					<!-- carousel items UL ends -->
+					<ul class="slidecontrols">
+						<li><a href="#sliderName" class="prev">Prev</a></li>
+						<li><a href="#sliderName" class="next">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="back" onclick="canclePrew()">
+			<div class="center">
+				<img alt="" src="" width="100%" height="100%" id="prewImg">
+			</div>
+		</div>
+		<!-- 联系和各种微博链接 -->
+		<div id="header-links" style="margin-top: 0px">
+			<div class="container">
+				<div class="one-half">
+				</div>
+				<div class="one-half">
+				</div>
+			</div>
+		</div>
+
+		<!--  Footer bottom Start -->
+		<section class="footer" style="margin-bottom: 0px">
+			<div class="copyright">
+				<p style="margin-bottom: 0px;">Copyright &copy; 2021.海康威视版权所有.</p>
+			</div>
+		</section> <!--  Footer bottom End -->
+		<div style="height:2px;"></div>
+	</body>
+</html>
